@@ -1,13 +1,4 @@
-from curses.ascii import HT
-from django.http import HttpResponse
-
-# Primera vista, devolver una respuesta
-
- 
-
-def vistaprofesor(request):
-
-    documento = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8">
@@ -100,6 +91,4 @@ def vistaprofesor(request):
                 </div>
         </div>
     </body>
-</html>"""
-
-    return HttpResponse(documento)
+</html>
