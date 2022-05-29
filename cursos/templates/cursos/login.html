@@ -30,120 +30,127 @@
     <h1>
       <span>C-Finder</span>
     </h1>
+    <section style="height: 100vh">
+      <div class="container" >
+        <div class="row m">
+          <!--Espaciado-->
+          <div class="col"></div>
 
-<div class="container">
-  <div class="row m">
-    <!--Espaciado-->
-    <div class="col"></div>
+          <!--Formulario-->
+          <div class="col">
+            <div class="text-end">
+              <h2 class="fw-bold text-center py-4">Login</h2>
 
-    <!--Formulario-->
-    <div class="col">
-      <div class="text-end">
-        <h2 class="fw-bold text-center py-4">Login</h2>
+              <!--Login-->
+              <form action="#">
+                <!--Correo-->
+                <div class="md-5 text-start">
+                  <label for="correo" class="form-label fw-bold">
+                    Correo Electronico
+                  </label>
+                  <input
+                    type="correo"
+                    class="form-control"
+                    name="correo"
+                    placeholder="Ingrese el correo electronico"
+                  />
+                </div>
 
-        <!--Login-->
-        <form action="#">
-          <!--Correo-->
-          <div class="md-5 text-start">
-            <label for="correo" class="form-label fw-bold">
-              Correo Electronico
-            </label>
-            <input
-              type="correo"
-              class="form-control"
-              name="correo"
-              placeholder="Ingrese el correo electronico"
-            />
+                <!--Contraseña-->
+                <div class="md-5 text-start">
+                  <label for="contraseña" class="form-label fw-bold">
+                    Contraseña
+                  </label>
+                  <input
+                    type="contraseña"
+                    class="form-control"
+                    name="contraseña"
+                    placeholder="Ingrese su contraseña"
+                  />
+                </div>
+
+                <!--Conexion-->
+                <div class="ms-5">
+                  <input
+                    type="checkbox"
+                    name="conectado"
+                    class="form-check-input"
+                  />
+                  <label for="conectado" class="form-check-label">
+                    Mantenerme Conectado <br />
+                  </label>
+                </div>
+
+                <!--Boton de inicio-->
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary text-center">
+                    Iniciar Sesion <br /><br />
+                  </button>
+                </div>
+
+                <!--Extras-->
+                <div class="my-3">
+                  <!--Contraseña olvidada-->
+                  <span class="fw-bold">
+                    <a href="#" style="color: black">
+                      Olvide mi contraseña <br />
+                    </a>
+                  </span>
+
+                  <!--No tengo cuenta-->
+                  <span class="fw-bold">
+                    ¿No tienes cuenta?
+                    <a href="#" style="color: black">
+                      Registrate aqui <br /><br />
+                    </a>
+                  </span>
+
+                  <!--Iniciar como invitado-->
+                  <span class="btn btn-sm">
+                    <a href="#" style="color: black"> Iniciar como invitado </a>
+                  </span>
+                </div>
+              </form>
+            </div>
           </div>
-
-          <!--Contraseña-->
-          <div class="md-5 text-start">
-            <label for="contraseña" class="form-label fw-bold">
-              Contraseña
-            </label>
-            <input
-              type="contraseña"
-              class="form-control"
-              name="contraseña"
-              placeholder="Ingrese su contraseña"
-            />
-          </div>
-
-          <!--Conexion-->
-          <div class="ms-5">
-            <input type="checkbox" name="conectado" class="form-check-input" />
-            <label for="conectado" class="form-check-label">
-              Mantenerme Conectado <br />
-            </label>
-          </div>
-
-          <!--Boton de inicio-->
-          <div class="d-grid">
-            <button type="submit" class="btn btn-primary text-center">
-              Iniciar Sesion <br /><br />
-            </button>
-          </div>
-
-          <!--Extras-->
-          <div class="my-3">
-            <!--Contraseña olvidada-->
-            <span class="fw-bold">
-              <a href="#" style="color: black"> Olvide mi contraseña <br /> </a>
-            </span>
-
-            <!--No tengo cuenta-->
-            <span class="fw-bold">
-              ¿No tienes cuenta?
-              <a href="#" style="color: black">
-                Registrate aqui <br /><br />
-              </a>
-            </span>
-
-            <!--Iniciar como invitado-->
-            <span class="btn btn-sm">
-              <a href="#" style="color: black"> Iniciar como invitado </a>
-            </span>
-          </div>
-        </form>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
+    </section>
     <!-- Footer -->
     <footer>
-        <div>
-          <p>
-            <a href="#">
-              <span>
-                <i></i>
-                <i></i>
-              </span>
-            </a>
-            <a href="#">
-              <span>
-                <i></i>
-                <i></i>
-              </span>
-            </a>
-            <a href="#">
-              <span>
-                <i></i>
-                <i></i>
-              </span>
-            </a>
-          </p>
-          <p>
-            <a href="#">Política de privacidad</a> · <a href="#">Aviso legal</a> ·
-            <a href="#">Cookies</a>
-          </p>
-          <p>&copy; C-Finder 2022</p>
-        </div>
-      </footer>
-  
-      <!-- Bootstrap -->
-      {% comment %}
-      <script src="{% static 'ProyectoWebApp/vendor/jquery/jquery.min.js' %}"></script>
-      <script src="{% static 'ProyectoWebApp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-      {% endcomment %}
-    </body>
-  </html>
+      <div>
+        <p>
+          <a href="#">
+            <span>
+              <i></i>
+              <i></i>
+            </span>
+          </a>
+          <a href="#">
+            <span>
+              <i></i>
+              <i></i>
+            </span>
+          </a>
+          <a href="#">
+            <span>
+              <i></i>
+              <i></i>
+            </span>
+          </a>
+        </p>
+        <p>
+          <a href="#">Política de privacidad</a> · <a href="#">Aviso legal</a> ·
+          <a href="#">Cookies</a>
+        </p>
+        <p>&copy; C-Finder 2022</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    {% comment %}
+    <script src="{% static 'ProyectoWebApp/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'ProyectoWebApp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    {% endcomment %}
+  </body>
+</html>
