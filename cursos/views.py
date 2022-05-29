@@ -11,3 +11,6 @@ def profesor(request):
 
 def fpassword(request):
     return render(request, 'cursos/forgot_password.html') 
+
+def cursos(request):
+    return render(request, 'cursos/v_cursos.html') 
