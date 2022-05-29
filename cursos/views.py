@@ -8,3 +8,6 @@ def login(request):
 
 def profesor(request):
     return render(request, 'cursos/v_profesor.html') 
+
+def fpassword(request):
+    return render(request, 'cursos/forgot_password.html') 
