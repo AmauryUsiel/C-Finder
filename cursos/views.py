@@ -13,4 +13,7 @@ def fpassword(request):
     return render(request, 'cursos/forgot_password.html') 
 
 def cursos(request):
-    return render(request, 'cursos/v_cursos.html') 
+    return render(request, 'cursos/v_cursos.html')
+
+def cursos(request):
+    return render(request, 'cursos/registro_nu.html') 
