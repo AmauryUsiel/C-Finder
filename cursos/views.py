@@ -15,5 +15,5 @@ def fpassword(request):
 def cursos(request):
     return render(request, 'cursos/v_cursos.html')
 
-def cursos(request):
+def registro(request):
     return render(request, 'cursos/registro_nu.html') 
