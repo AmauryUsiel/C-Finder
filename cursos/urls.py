@@ -9,6 +9,7 @@ urlpatterns = [
     path('profesor/', views.profesor, name='profesor'),
     path('fpassword/', views.fpassword, name='fpassword'),
     path('cursos/', views.cursos, name='cursos'),
+    path('registro/', views.registro, name='registro'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
