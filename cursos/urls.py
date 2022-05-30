@@ -11,4 +11,4 @@ urlpatterns = [
     path('cursos/', views.cursos, name='cursos'),
 ]
 
-urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+# urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
