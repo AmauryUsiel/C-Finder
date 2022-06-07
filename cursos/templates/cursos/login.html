@@ -1,50 +1,26 @@
 <html lang="es">
-  <head>
-    {% load static %}
+  <head> 
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>C-Finder</title>
-
-    <link
-      
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-
-    <link rel="shortcut icon" href="../../static/cfinderv2_v2.png" />
   </head>
 
-  <body
-    style="
-      height: 100px;
-      background: linear-gradient(
-        160deg,
-        rgba(158, 158, 158, 0.24),
-        rgba(136, 196, 252, 0.664)
-      );
-    "
-  >
+  <body>
     <h1>
       <span>C-Finder</span>
     </h1>
-    <section style="height: 100vh">
-      <div class="" ><!--class..."container"-->
-        <div class=""><!--class..."row m"  (row funciona como secciones, las columnas que hay en la pagina, BS5 maneja max de 10 columnas)-->
-          <!--Espaciado-->
-          <div class=""></div><!--class..."col"-->
-
+    <section style="height: 84vh">   
           <!--Formulario-->
-          <div class=""><!--class..."col"-->
-            <div class=""><!--class..."text-end"-->
-              <h2 class="">Login</h2><!--class..."fw-bold text-center py-4"-->
-
+          <div class=""> 
+            <div class=""> 
+              <h2 class="">Login</h2>  
               <!--Login-->
               <form action="#">
                 <!--Correo-->
-                <div class=""><!--class..."md-5 text-start"-->
-                  <label for="correo" class=""><!--class..."form-label fw-bold" letra gordita-->
+                <div class=""> 
+                  <label for="correo" class="" 
                     Correo Electronico
                   </label>
                   <input
@@ -56,8 +32,8 @@
                 </div>
 
                 <!--Contraseña-->
-                <div class=""><!--class..."md-5 text-start"-->
-                  <label for="contraseña" class=""><!--class..."form-label fw-bold"-->
+                <div class=""> 
+                  <label for="contraseña" class="" 
                     Contraseña
                   </label>
                   <input
@@ -69,35 +45,35 @@
                 </div>
 
                 <!--Conexion-->
-                <div class=""><!--class..."ms-5"-->
+                <div class=""> 
                   <input
                     type="checkbox"
                     name="conectado"
                     class="form-check-input"
                   />
-                  <label for="conectado" class=""><!--class..."form-check-label"-->
+                  <label for="conectado" class="" 
                     Mantenerme Conectado <br />
                   </label>
                 </div>
 
                 <!--Boton de inicio-->
-                <div class=""><!--class..."d-grid"-->
-                  <button type="submit" class=""><!--class..."btn btn-primary text-center"-->
+                <div class=""> 
+                  <button type="submit" class=""> 
                     Iniciar Sesion <br /><br />
                   </button>
                 </div>
 
                 <!--Extras-->
-                <div class=""><!--class..."my-3"-->
+                <div class=""> 
                   <!--Contraseña olvidada-->
-                  <span class=""><!--class..."fw-bold"-->
+                  <span class="" 
                     <a href="fpassword" style="color: black">
                       Olvide mi contraseña <br />
                     </a>
                   </span>
 
                   <!--No tengo cuenta-->
-                  <span class=""><!--class..."fw-bold"-->
+                  <span class="" 
                     ¿No tienes cuenta?
                     <a href="registro" style="color: black">
                       Registrate aqui <br /><br />
@@ -105,50 +81,43 @@
                   </span>
 
                   <!--Iniciar como invitado-->
-                  <span class=""><!--class...btn btn-sm""-->
-                    <a href="cursos" style="color: black"> Iniciar como invitado </a>
+                  <span class="" 
+                    <a href="cursos" style="color: black">
+                      Iniciar como invitado
+                    </a>
                   </span>
                 </div>
               </form>
             </div>
-          </div>
-        </div>
-      </div>
+          </div> 
     </section>
     <!-- Footer -->
     <footer>
-      <div>
-        <p>
-          <a href="#">
-            <span>
-              <i></i>
-              <i></i>
-            </span>
-          </a>
-          <a href="#">
-            <span>
-              <i></i>
-              <i></i>
-            </span>
-          </a>
-          <a href="#">
-            <span>
-              <i></i>
-              <i></i>
-            </span>
-          </a>
-        </p>
-        <p>
-          <a href="#">Política de privacidad</a> · <a href="#">Aviso legal</a> ·
-          <a href="#">Cookies</a>
-        </p>
-        <p>&copy; C-Finder 2022</p>
-      </div>
+      <p>
+        <a href="#">
+          <span>
+            <i></i>
+            <i></i>
+          </span>
+        </a>
+        <a href="#">
+          <span>
+            <i> </i>
+            <i> </i>
+          </span>
+        </a>
+        <a href="#">
+          <span>
+            <i></i>
+            <i></i>
+          </span>
+        </a>
+      </p>
+      <p>
+        <a href="#">Política de privacidad</a> · <a href="#">Aviso legal</a> ·
+        <a href="#">Cookies</a>
+      </p>
+      <p>&copy; C-Finder 2022</p>
     </footer>
-
-    <!-- Bootstrap -->
-    {% comment %}
-    
-    {% endcomment %}
   </body>
 </html>

@@ -5,69 +5,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>C-Finder</title>
-
-    <link
-      
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-
-    <link rel="shortcut icon" href="../../static/cfinderv2_v2.png" />
+    <title>C-Finder</title> 
   </head>
 
-  <body
-    style="
-      height: 100px;
-      background: linear-gradient(
-        160deg,
-        rgba(158, 158, 158, 0.24),
-        rgba(136, 196, 252, 0.664)
-      );
-    "
-  >
-    <h1>
-      <span>C-Finder</span>
-    </h1>
-
+  <body>  
     <!--Inicio de la Nav Bar-->
-    
-    <nav class=""><!--class..."navbar navbar-expand-sm bg-primary"-->
-      <div class=""><!--class..."container-fluid align-content-center"-->
-        <div class=""><!--class..."row"-->
-          <div class=""><!--class..."col"-->
-            <a href="#">
-              <img src="../../static/cfinderv2_v2.png" width="100vh" alt="">
-            </a>
-          </div>
-          <div class=""><!--class..."col-auto mt-3"-->
-            <a class="" href="" style="color: black;"><!--class..."navbar-brand"-->
-              <img src="../../static/logpng.png" width="30" alt="">
-              Usuario
-            </a>
-          </div>
-          <div class=""><!--class..."col-auto"-->
-            <form action="" class="" style="width: 100;"><!--class..."d-flex"-->
-              <div class=" "><!--class..."form-inline my-1 my-lg-3"-->
-                <input type="" type="search" placeholder="Ingresa la busqueda"><!--type..."form-control me-2" (me2 en bootstrap funciona como posicion/acomodo)-->
-                <button class="" type="submit"><!--class..."btn btn-aoutline-dark my-1 my-sm-0"-->
-                  Buscar🔎
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+
+    <nav class="">  
+        <a href="#">
+          <img src="../../static/cfinderv2_v2.png" width="100vh" alt="" />
+        </a> 
+        <a class="" href="" style="color: black" 
+          <img src="../../static/logpng.png" width="30" alt="" />
+          Usuario
+        </a> 
+      <div class=""> 
+        <form action="" class="" style="width: 100">  
+            <input
+              type=""
+              type="search"
+              placeholder="Ingresa la busqueda" 
+            <button class="" type="submit"> 
+              Buscar🔎
+            </button> 
+        </form>
       </div>
     </nav>
-  <!--Fin de la -->
-
-    <!-- Contenido -->
+    <!--Fin de la -->
+ 
 
     {% block content %} {% endblock %}
 
     <!-- Footer -->
-    <footer>
-      <div>
+    <footer> 
         <p>
           <a href="#">
             <span>
@@ -77,8 +47,8 @@
           </a>
           <a href="#">
             <span>
-              <i></i>
-              <i></i>
+              <i> </i>
+              <i> </i>
             </span>
           </a>
           <a href="#">
@@ -92,15 +62,7 @@
           <a href="#">Política de privacidad</a> · <a href="#">Aviso legal</a> ·
           <a href="#">Cookies</a>
         </p>
-        <p>&copy; C-Finder 2022</p>
-      </div>
-    </footer>
-
-    <!-- Bootstrap -->
-    {% comment %}
-    <!--los script de boostrap solo buscaban las librerias de diseño en la web-->
-    <!--<script src="{% static 'ProyectoWebApp/vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'ProyectoWebApp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>-->
-    {% endcomment %}
+        <p>&copy; C-Finder 2022</p> 
+    </footer> 
   </body>
 </html>
