@@ -9,11 +9,10 @@
   </head>
 
   <body id="overview">   
-    <!--Inicio de la Nav Bar-->
-    <p>asdasdsa</p>
+    <!--Inicio de la Nav Bar--> 
     <nav>  
         <a href="#">
-          <img src="{% static 'cursos/img/cfinderv2_v2.png' %}" width="100px" alt="" />
+          <img class = "app-logo"src="{% static 'cursos/img/cfinderv2_v2.png' %}" width="100px" alt="" />
         </a> 
         <a href="" style="color: black" 
           <img src="{% static 'cursos/img/logpng.png' %}" width="30px" alt="" />
@@ -33,91 +32,94 @@
     </nav>
     <!--Fin de la -->
   <!--Inicio de los cursos-->
-<section>  
-      <div> 
+    <section>  
+      <div class="container1"> 
         <div> 
-          <h2>Cursos Buscados</h2>
+          <div> 
+            <h1>Cursos Buscados</h1>
+          </div> <!--Autocrea-->  
+          <div class = "card-buscados">   
+            <a href="#">
+              <h2>Titulo</h2>
+              <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="45%" alt="">
+            </a> <hr/>
+            <h5> Plataforma:</h5> <p>{% lorem 2 b random %}</p>
+            <a href="https://www.youtube.com">
+              <p>YouTube</p> 
+            </a>
+            <p> 
+              Descipcion breve del video de youtube
+            </p>  
+          </div>  
         </div>
-        <ul> <!--Autocrea--> 
-          <li> 
-            <div> 
-              <span>   
-                <div> 
-                  <h3>Titulo</h3>
-                    <a href="#">
-                      <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="100px" alt="">
-                    </a> 
-                    <h5> Plataforma:</h5> <p>{% lorem 4 b random %}</p>
-                    <a href="https://www.youtube.com">
-                      <p>YouTube</p> 
-                    </a>
-                    <p> 
-                      Descipcion breve del video de youtube
-                    </p>
-                  </div> 
-              </span>
-            </div>
-          </li>
-          <!--Hasta aqui-->
+  
+        <div>
+          <div> 
+            <h1>Curso Recomendado</h1>
+          </div>  <!--Autocrea-->  
+          <div class = "card-buscados">   
+            <a href="#">
+              <h2>Titulo</h2>
+              <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="45%" alt="">
+            </a> <hr/>
+            <h5> Plataforma:</h5> <p>{% lorem 2 b random %}</p>
+            <a href="https://www.youtube.com">
+              <p>YouTube</p> 
+            </a>
+            <p> 
+              Descipcion breve del video de youtube
+            </p>  
+          </div>  
+        </div>
 
-          <!--Terminan los videos de busqueda-->
+        <div>  
+          <div> 
+            <h1>Cursos de ESCOM</h1>
+          </div>  <!--Autocrea-->  
+          <div class = "card-buscados">   
+            <a href="#">
+              <h2>Titulo</h2>
+              <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="45%" alt="">
+            </a> <hr/>
+            <h5> Plataforma:</h5> <p>{% lorem 2 b random %}</p>
+            <a href="https://www.youtube.com">
+              <p>YouTube</p> 
+            </a>
+            <p> 
+              Descipcion breve del video de youtube
+            </p>  
+          </div>  
+        </div>  
+      </div> <!--End conteiner1-->
 
-          
-        </ul>
-      </div>
+      <div class="container2">
+        <h1 style="font-size: 2em;">Tambien podria interesarte</h1>
+        <div class="card-sidebar">
+          <div class=""> 
+            <h2>Cursos de escom</h2>
+          </div>
+          <div class=""> 
+            <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="100%" alt="">
+            <br/>
+            <hr/> 
+            <p>Reprehenderit mollitia consectetur assumenda quis quos.</p>
+          </div>
+        </div> 
+        <div class="card-sidebar">
+          <div class=""> 
+            <h2>Cursos de escom</h2>
+          </div>
+          <div class=""> 
+            <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="100%" alt="">
+            <br/>
+            <hr/> 
+            <p>Reprehenderit mollitia consectetur assumenda quis quos.</p>
+          </div>
+        </div> 
+      </div> <!--End conteiner2-->
+    </section>
+    <!--Fin de los cursos-->
 
-      <div><!--class..."col-2 text-center"-->
-        <h2>Curso Recomendado</h2>
-        <ul><!--class..."list-group"-->
-          <li><!--class..."list-group-item"-->
-            <div><!--class..."card"-->
-              <span><!--class..."border border-primary rounded"-->
-                <div><!--class..."col-auto text-center"-->
-                  <a href="https://www.youtube.com">
-                    <img src="../../static/img/login_botrep.jpg" width="100%" alt="">
-                  </a>
-                  <h3>Titulo</h3>
-                  <h5>Plataforma</h5>
-                  <a href="https://www.youtube.com">
-                    <p><!--class..."card-text col text-center"-->
-                      YouTube
-                    </p>
-                  </a>
-                  <p>
-                    Breve descripcion del video de youtube
-                  </p>
-                </div>               
-              </span>
-            </div>
-          </li>
-        </ul>
-        <h2>Cursos de ESCOM</h2>
-          <ul><!--class..."list-group"-->
-            <li><!--class..."list-group-item"-->
-              <div><!--class..."card"-->
-                <span><!--class..."border border-primary rounded"-->
-                  <div><!--class..."col-auto text-center"-->
-                    <p><!--class..."card-text col text-center"-->
-                      <a href="https://www.youtube.com">
-                        <img src="../../static/img/login_botrep.jpg" width="100%" alt="">
-                      </a>
-                      <p>Titulo</p>
-                      <p>Tema1,Tema2</p>
-                      <a href="https://www.youtube.com">
-                        <p><!--class..."card-text col text-center"-->
-                          Ingresar al Curso
-                        </p>
-                      </a>
-                      Breve Descripcion del video del profesor de ESCOM
-                    </p>
-                  </div>               
-                </span>
-              </div>
-            </li>
-                        
-          </ul>
-      </div> 
-</section>
     <!-- Footer -->
     <footer> 
       <p>
