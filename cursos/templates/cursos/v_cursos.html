@@ -6,31 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>C-Finder</title> 
     <link rel="stylesheet" type="text/css" href="{% static 'cursos/css/v_cursos.css' %}">
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #cbdeed;
+    }
+    
+    li {
+        float: left;
+        color: #341d0d;
+        margin: auto;
+    }
+    
+    li a {
+        display: block; 
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: #341d0d;
+        color: #60a5e1;
+    }
+      </style>
   </head>
 
   <body id="overview">   
-    <!--Inicio de la Nav Bar--> 
-    <nav>  
-        <a href="#">
-          <img class = "app-logo"src="{% static 'cursos/img/cfinderv2_v2.png' %}" width="100px" alt="" />
-        </a> 
-        <a href="" style="color: black" 
-          <img src="{% static 'cursos/img/logpng.png' %}" width="30px" alt="" />
-          Usuario
-        </a> 
-      <div> 
-        <form action="" style="width: 100">  
-            <input
-              type=""
-              type="search"
-              placeholder="Ingresa la busqueda" 
-            <button type="submit"> 
-              Buscar🔎
-            </button> 
-        </form>
-      </div>
-    </nav>
-    <!--Fin de la -->
+    <!--Inicio de la Nav Bar-->    
+      <ul>
+        <li><a href="#"><img class = "app-logo"src="{% static 'cursos/img/cfinderv2_v2.png' %}" width="60px" alt="" /></a></li>
+        <li><a href="#"><img src="{% static 'cursos/img/logpng.png' %}" width="30px" alt="" /></a></li>
+        <li><a href="#" style="font-size:30px"> Usuario </a></li> 
+        <li>
+          <form action="" style="width: 100; padding-top:10px">  
+              <input
+                type=""
+                type="search"
+                placeholder="Ingresa la busqueda" 
+              <button type="submit"> 
+                Buscar🔎
+              </button> 
+          </form> 
+        </li>  
+      </ul>  
+    <!--Fin de la nav-->
   <!--Inicio de los cursos-->
     <section>  
       <div class="container1"> 
