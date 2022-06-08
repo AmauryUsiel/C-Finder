@@ -1,7 +1,8 @@
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 15px 0 0;
+    width: 98%;
     overflow: hidden;
     background-color: #cbdeed;
 }
@@ -22,6 +23,13 @@ li a {
 li a:hover {
     background-color: #341d0d;
     color: #60a5e1;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #624c20
 }
 
 .sectionmain {
@@ -53,6 +61,12 @@ li a:hover {
 .app-logo {
     height: 5vmin 5vmax;
     pointer-events: none;
+    padding-right: 1;
+}
+
+#logo {
+    float: right;
+    padding-right: 15px;
 }
 
 
@@ -88,26 +102,17 @@ h1 {
     font-size: 2.5em;
 }
 
-
-/* color1 {
+color1 {
     color: #341d0d;
-}
-
-color2 {
+    /* color2 { */
     color: #624c20;
-}
-
-color3 {
+    /* color3 { */
     color: #60a5e1;
-}
-
-color4 {
+    /* color4 { */
     color: #cbdeed;
-}
-
-color5 {
+    /*color5 {*/
     color: #f8efed;
-} */
+}
 
 .navbar {
     width: 100%;
@@ -121,6 +126,6 @@ color5 {
     bottom: 0;
     width: 100%;
     background-color: #cbdeed;
-    color: white;
+    color: #624c20;
     text-align: center;
 }
