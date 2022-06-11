@@ -20,3 +20,9 @@ def cursos(request):
  
 def registro(request):
     return render(request, 'cursos/registro_nu.html')  
+
+def cpython(request):
+    return render(request, 'cursos/cursosdepython.html') 
+
+def candroid(request):
+    return render(request, 'cursos/cursosdeandroidstudio.html')
