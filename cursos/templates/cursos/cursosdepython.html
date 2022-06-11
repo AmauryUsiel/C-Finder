@@ -22,7 +22,7 @@
                   type="search"
                   placeholder="Ingresa la busqueda">
                 <button type="submit">
-                  <a href="{% url 'cursosdepython' %}">Buscar🔎</a> 
+                  <a href="{% url 'cursosdeandroidstudio' %}">Buscar🔎</a>
                 </button>
             </form>
           </li>
@@ -38,57 +38,64 @@
           </div> <!--Autocrea-->
           <div class = "card-buscados">
             <a href="#">
-              <h2>Titulo</h2>
-              <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="45%" alt="">
+              <h2>Curso Python para Principiantes</h2>
+              <img src="{% static 'cursos/img/youtube_logo.png' %}" width="45%" alt="">
             </a> <hr/>
-            <h5> Plataforma:</h5> <p>{% lorem 2 b random %}</p>
-            <a href="https://www.youtube.com">
-              <p>YouTube</p>
-            </a>
+            <h5> Plataforma:</h5> <a href="https://www.youtube.com/watch?v=chPhlsHoEPo&t=10437s&ab_channel=Fazt">YouTube</a>
+            <h5>Autor:</h5> <a href="">Fazt</a>
             <p>
               Descipcion breve del video de youtube
             </p>
+            <p> ¡Gracias a Kite por patrocinar esta sección del vídeo! Kite es un asistente de autocompletado gratuito con tecnología de IA que te ayudará a codificar de fo</p>
           </div>
         </div>
 
         <div>
-          <div>
-            <h1>Curso Recomendado</h1>
-          </div>  <!--Autocrea-->
-          <div class = "card-buscados">
-            <a href="#">
-              <h2>Titulo</h2>
-              <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="45%" alt="">
-            </a> <hr/>
-            <h5> Plataforma:</h5> <p>{% lorem 2 b random %}</p>
-            <a href="https://www.youtube.com">
-              <p>YouTube</p>
-            </a>
-            <p>
-              Descipcion breve del video de youtube
-            </p>
+            <div class = "card-buscados">
+              <a href="#">
+                <h2>Curso Completo de Python para Principiantes (2022)</h2>
+                <img src="{% static 'cursos/img/youtube_logo.png' %}" width="45%" alt="">
+              </a> <hr/>
+              <h5> Plataforma:</h5> <a href="https://www.youtube.com/watch?v=swdcD6OPMlk&ab_channel=LucasMoy">YouTube</a>
+              <h5>Autor:</h5> <a href="">Lucas Moy</a>
+              <p>
+                Descipcion breve del video de youtube
+              </p>
+              <p>  Sé Programador Python, una de las profesiones con más futuro y sé parte del cambio. Aprovecha tu tiempo en casa con nuestro curso 100% online de Programa</p>
+            </div>
           </div>
-        </div>
 
-        <div>
           <div>
-            <h1>Cursos de ESCOM</h1>
-          </div>  <!--Autocrea-->
-          <div class = "card-buscados">
-            <a href="#">
-              <h2>Titulo</h2>
-              <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="45%" alt="">
-            </a> <hr/>
-            <h5> Plataforma:</h5> <p>{% lorem 2 b random %}</p>
-            <a href="https://www.youtube.com">
-              <p>YouTube</p>
-            </a>
-            <p>
-              Descipcion breve del video de youtube
-            </p>
+            <div class = "card-buscados">
+              <a href="#">
+                <h2>Curso Completo de Python para Principiantes (2022)</h2>
+                <img src="{% static 'cursos/img/youtube_logo.png' %}" width="45%" alt="">
+              </a> <hr/>
+              <h5> Plataforma:</h5> <a href="https://www.youtube.com/watch?v=DAdRO6ByBoU&ab_channel=LaGeekipediaDeErnesto">YouTube</a>
+              <h5>Autor:</h5> <a href="">La Geekipedia De Ernesto</a>
+              <p>
+                Descipcion breve del video de youtube
+              </p>
+              <p>  Curso Python desde cero - En esta entrega del curso de programación Python desde cero, verás la introducción al curso y realizaremos la instalación de Python en …</p>
+            </div>
           </div>
-        </div>
-      </div> <!--End conteiner1-->
+          <div>
+            <div class = "card-buscados">
+              <a href="#">
+                <h2>Curso de Python 3.10: Aprende Desde Cero a Pro 2022 Parte 1</h2>
+                <img src="{% static 'cursos/img/udemy_logo.png' %}" width="45%" alt="">
+              </a> <hr/>
+              <h5> Plataforma:</h5> <a href="https://www.udemy.com/course/curso-de-python-310-aprende-desde-cero-a-pro-2022-parte-1/">udemy</a>
+              <h5>Autor:</h5> <a href="">Marco Mendoza</a>
+              <p>
+                Descipcion breve del video de udemy
+              </p>
+              <p>  Aprende Como un Profesional Python 3.10.5 el Lenguaje de Programación Más Demandado del Mundo</p>
+              <h5>Costo:</h5> <a href="">Gratis</a>
+            </div>
+          </div>
+      </div>
+          <!--End conteiner1-->
 
       <div class="container2">
         <h1 style="font-size: 2em;">Tambien podria interesarte</h1>
@@ -107,10 +114,6 @@
         </div>
         <div class="card-sidebar">
           <a href="#">
-
-            <div class="">
-              <h2>Cursos de escom</h2>
-            </div>
             <div class="">
               <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="100%" alt="">
               <br/>
@@ -121,10 +124,6 @@
         </div>
         <div class="card-sidebar">
           <a href="#">
-
-            <div class="">
-              <h2>Cursos de escom</h2>
-            </div>
             <div class="">
               <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="100%" alt="">
               <br/>
@@ -133,35 +132,7 @@
             </div>
           </a>
         </div>
-        <div class="card-sidebar">
-          <a href="#">
-
-            <div class="">
-              <h2>Cursos de escom</h2>
-            </div>
-            <div class="">
-              <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="100%" alt="">
-              <br/>
-              <hr/>
-              <p>Reprehenderit mollitia consectetur assumenda quis quos.</p>
-            </div>
-          </a>
-        </div>
-        <div class="card-sidebar">
-          <a href="#">
-
-            <div class="">
-              <h2>Cursos de escom</h2>
-            </div>
-            <div class="">
-              <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="100%" alt="">
-              <br/>
-              <hr/>
-              <p>Reprehenderit mollitia consectetur assumenda quis quos.</p>
-            </div>
-          </a>
-        </div>
-      </div> <!--End conteiner2-->
+     <!--End conteiner2-->
     </section>
     <!--Fin de los cursos-->
 
