@@ -1,19 +1,45 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+import pyrebase
+from django.template import RequestContext
+from django.shortcuts import render, redirect
+from django.http import HttpRequest, HttpResponse
+
+config={
+    "apiKey": "AIzaSyAojY9DDWrViFN4uAi-95ueJjB_XTE3eL4",
+    "authDomain": "c-finder-7f032.firebaseapp.com",
+    "databaseURL": "https://c-finder-7f032-default-rtdb.firebaseio.com",
+    "projectId": "c-finder-7f032",
+    "storageBucket": "c-finder-7f032.appspot.com",
+    "messagingSenderId": "527727009170",
+    "appId": "1:527727009170:web:3fc48042890f2fb861b54b"    
+}
+firebase = pyrebase.initialize_app(config)
+auth = firebase.auth()
+database = firebase.database()
+storage = firebase.storage()
 
 # Create your views here.
 
+
 def login(request):
-    return render(request, 'cursos/login.html') 
+    correo = request.POST.get('correo')
+    contraseña = request.POST.get('contraseña')
+    try:
+        user = auth.sign_in_with_email_and_password(correo, contraseña)
+        return redirect('cursos')
+    except:
+        print("Invalid user or password. Try again")
+    return render(request, 'cursos/login.html')
 
 def profesor(request):
     return render(request, 'cursos/v_profesor.html') 
 
+
 def fpassword(request):
     return render(request, 'cursos/forgot_password.html') 
 
+
 def cursos(request):
     return render(request, 'cursos/v_cursos.html')
-
+ 
 def registro(request):
-    return render(request, 'cursos/registro_nu.html') 
+    return render(request, 'cursos/registro_nu.html')  
