@@ -1,178 +1,172 @@
 <html lang="es">
-  <head> 
+  <head>
     {% load static %}
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>C-Finder</title> 
-    <link rel="stylesheet" type="text/css" href="{% static 'cursos/css/v_cursos.css' %}"> 
+    <title>C-Finder</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'cursos/css/v_cursos.css' %}">
   </head>
 
-  <body>   
-    <!--Inicio de la Nav Bar-->    
-    <div class="navbar"> 
+  <body>
+    <!--Inicio de la Nav Bar-->
+    <div class="navbar">
         <ul>
           <li id="logo" ><a href="#"><img class = "app-logo"src="{% static 'cursos/img/cfinderv2_v2.png' %}"  width="60px" alt="" /></a></li>
           <li style="padding-top:5px"><a href="#" ><img src="{% static 'cursos/img/logpng.png' %}" width="30px" alt="" /></a></li>
-          <li><a href="#" style="font-size:30px;padding-top:15px;"> Usuario </a></li> 
+          <li><a href="#" style="font-size:30px;padding-top:15px;"> Usuario {{e}} </a></li>
           <li>
-            <form action="" style="width: 100; padding-top:13px">  
+            <form action="" style="width: 100; padding-top:13px">
                 <input
                   type=""
                   type="search"
-                  placeholder="Ingresa la busqueda" 
-                <button type="submit"> 
+                  placeholder="Ingresa la busqueda">
+                <button type="submit">
                   Buscar🔎
-                </button> 
-            </form> 
-          </li>  
-        </ul>   
+                </button>
+            </form>
+          </li>
+        </ul>
     </div>
     <!--Fin de la nav-->
   <!--Inicio de los cursos-->
-    <section class="sectionmain" >  
-      <div class="container1"> 
-        <div> 
-          <div> 
-            <h1>Cursos Buscados</h1>
-          </div> <!--Autocrea-->  
-          <div class = "card-buscados">   
-            <a href="#">
-              <h2>Titulo</h2>
-              <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="45%" alt="">
-            </a> <hr/>
-            <h5> Plataforma:</h5>
-            <p> 
-              Descipcion breve 
-            </p>
-            <a href="https://www.youtube.com">
-              <p>YouTube</p> 
-            </a>
-             <p>{% lorem 2 b random %}</p>
-              
-          </div>  
-        </div>
-  
+    <section class="sectionmain" >
+      <div class="container1">
         <div>
-          <div> 
-            <h1>Curso Recomendado</h1>
-          </div>  <!--Autocrea-->  
-          <div class = "card-buscados">   
+          <div>
+            <h1>Cursos Buscados</h1>
+          </div> <!--Autocrea-->
+          <div class = "card-buscados">
             <a href="#">
               <h2>Titulo</h2>
               <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="45%" alt="">
             </a> <hr/>
-            <h5> Plataforma:</h5>
-            <p> 
-              Descipcion breve 
-            </p>
+            <h5> Plataforma:</h5> <p>{% lorem 2 b random %}</p>
             <a href="https://www.youtube.com">
-              <p>YouTube</p> 
+              <p>YouTube</p>
             </a>
-             <p>{% lorem 2 b random %}</p>
-              
-          </div>  
+            <p>
+              Descipcion breve del video de youtube
+            </p>
+          </div>
         </div>
 
-        <div>  
-          <div> 
-            <h1>Cursos de ESCOM</h1>
-          </div>  <!--Autocrea-->  
-          <div class = "card-buscados">   
+        <div>
+          <div>
+            <h1>Curso Recomendado</h1>
+          </div>  <!--Autocrea-->
+          <div class = "card-buscados">
             <a href="#">
               <h2>Titulo</h2>
               <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="45%" alt="">
             </a> <hr/>
-            <h5> Plataforma:</h5>
-            <p> 
-              Descipcion breve 
-            </p>
+            <h5> Plataforma:</h5> <p>{% lorem 2 b random %}</p>
             <a href="https://www.youtube.com">
-              <p>YouTube</p> 
+              <p>YouTube</p>
             </a>
-             <p>{% lorem 2 b random %}</p>
-              
-          </div>  
-        </div>  
+            <p>
+              Descipcion breve del video de youtube
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h1>Cursos de ESCOM</h1>
+          </div>  <!--Autocrea-->
+          <div class = "card-buscados">
+            <a href="#">
+              <h2>Titulo</h2>
+              <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="45%" alt="">
+            </a> <hr/>
+            <h5> Plataforma:</h5> <p>{% lorem 2 b random %}</p>
+            <a href="https://www.youtube.com">
+              <p>YouTube</p>
+            </a>
+            <p>
+              Descipcion breve del video de youtube
+            </p>
+          </div>
+        </div>
       </div> <!--End conteiner1-->
 
       <div class="container2">
         <h1 style="font-size: 2em;">Tambien podria interesarte</h1>
         <div class="card-sidebar">
-          <a href="#"> 
-            <div class=""> 
+          <a href="#">
+            <div class="">
               <h2>Cursos de escom</h2>
             </div>
-            <div class=""> 
+            <div class="">
               <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="100%" alt="">
               <br/>
-              <hr/> 
+              <hr/>
               <p>Reprehenderit mollitia consectetur assumenda quis quos.</p>
             </div>
           </a>
-        </div> 
+        </div>
         <div class="card-sidebar">
-          <a href="#"> 
+          <a href="#">
 
-            <div class=""> 
+            <div class="">
               <h2>Cursos de escom</h2>
             </div>
-            <div class=""> 
+            <div class="">
               <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="100%" alt="">
               <br/>
-              <hr/> 
+              <hr/>
               <p>Reprehenderit mollitia consectetur assumenda quis quos.</p>
             </div>
           </a>
-        </div> 
+        </div>
         <div class="card-sidebar">
-          <a href="#"> 
+          <a href="#">
 
-            <div class=""> 
+            <div class="">
               <h2>Cursos de escom</h2>
             </div>
-            <div class=""> 
+            <div class="">
               <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="100%" alt="">
               <br/>
-              <hr/> 
+              <hr/>
               <p>Reprehenderit mollitia consectetur assumenda quis quos.</p>
             </div>
           </a>
-        </div> 
+        </div>
         <div class="card-sidebar">
-          <a href="#"> 
+          <a href="#">
 
-            <div class=""> 
+            <div class="">
               <h2>Cursos de escom</h2>
             </div>
-            <div class=""> 
+            <div class="">
               <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="100%" alt="">
               <br/>
-              <hr/> 
+              <hr/>
               <p>Reprehenderit mollitia consectetur assumenda quis quos.</p>
             </div>
           </a>
-        </div> 
+        </div>
         <div class="card-sidebar">
-          <a href="#"> 
+          <a href="#">
 
-            <div class=""> 
+            <div class="">
               <h2>Cursos de escom</h2>
             </div>
-            <div class=""> 
+            <div class="">
               <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="100%" alt="">
               <br/>
-              <hr/> 
+              <hr/>
               <p>Reprehenderit mollitia consectetur assumenda quis quos.</p>
             </div>
           </a>
-        </div> 
+        </div>
       </div> <!--End conteiner2-->
     </section>
     <!--Fin de los cursos-->
 
     <!-- Footer -->
-    <div class="footer"> 
+    <div class="footer">
       <p>
         <a href="#">
           <span>
@@ -197,7 +191,7 @@
         <a href="#">Política de privacidad</a> · <a href="#">Aviso legal</a> ·
         <a href="#">Cookies</a>
       </p>
-      <p>&copy; C-Finder 2022</p> 
-    </div> 
+      <p>&copy; C-Finder 2022</p>
+    </div>
 </body>
 </html>
