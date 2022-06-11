@@ -10,6 +10,8 @@ urlpatterns = [
     path('fpassword/', views.fpassword, name='fpassword'),
     path('cursos/', views.cursos, name='cursos'),
     path('registro/', views.registro, name='registro'),
+    path('cursosdepython/', views.cpython, name='cursosdepython'),
+    path('cursosdeandroidstudio/', views.candroid, name= 'cursosdeandroidstudio')
 ]
 
 # urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
