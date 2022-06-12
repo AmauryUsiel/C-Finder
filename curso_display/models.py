@@ -15,4 +15,5 @@ class Curso(models.Model):
         verbose_name_plural = 'cursos'
         
     def __str__(self):
-        return self.titulo
+        return self.titulo 
+    
