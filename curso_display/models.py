@@ -7,6 +7,7 @@ class Curso(models.Model):
     imagen = models.ImageField(upload_to='curso_display')
     nombrePlataforma = models.CharField(max_length=50, blank=True)
     enlace = models.URLField(max_length=200 , blank=True)
+    description_vid = models.TextField(max_length=200 , blank=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     class Meta:

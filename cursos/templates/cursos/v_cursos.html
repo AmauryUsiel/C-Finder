@@ -5,124 +5,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>C-Finder</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'cursos/css/v_cursos.css' %}">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'cursos/css/v_cursos.css' %}"
+    />
   </head>
 
   <body>
     <!--Inicio de la Nav Bar-->
     <div class="navbar">
-        <ul>
-          <li id="logo" ><a href="#"><img class = "app-logo"src="{% static 'cursos/img/cfinderv2_v2.png' %}"  width="60px" alt="" /></a></li>
-          <li style="padding-top:5px"><a href="#" ><img src="{% static 'cursos/img/logpng.png' %}" width="30px" alt="" /></a></li>
-          <li><a href="#" style="font-size:30px;padding-top:15px;"> Usuario {{e}} </a></li>
-          <li>
-            <form action="" style="width: 100; padding-top:13px">
-                <input
-                  type=""
-                  type="search"
-                  placeholder="Ingresa la busqueda">
-                <button type="submit">
-                  <a href="{% url 'cursosdepython' %}">Buscar🔎</a> 
-                </button>
-            </form>
-          </li>
-        </ul>
+      <ul>
+        <li id="logo">
+          <a href="#"
+            ><img
+              class="app-logo"
+              src="{% static 'cursos/img/cfinderv2_v2.png' %}"
+              width="60px"
+              alt=""
+          /></a>
+        </li>
+        <li style="padding-top: 5px">
+          <a href="#"
+            ><img
+              src="{% static 'cursos/img/logpng.png' %}"
+              width="30px"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#" style="font-size: 30px; padding-top: 15px">
+            Usuario {{e}}
+          </a>
+        </li>
+        <li>
+          <form action="" style="width: 100; padding-top: 13px">
+            <input type="" type="search" placeholder="Ingresa la busqueda" />
+            <button type="submit">
+              <a href="{% url 'cursosdepython' %}">Buscar🔎</a>
+            </button>
+          </form>
+        </li>
+      </ul>
     </div>
     <!--Fin de la nav-->
-  <!--Inicio de los cursos-->
-    <section class="sectionmain" >
+    <!--Inicio de los cursos-->
+    <section class="sectionmain">
       <div class="container1">
         <div>
           <div>
             <h1>Cursos Buscados</h1>
-          </div> <!--Autocrea-->
-          <div class = "card-buscados">
-            <a href="#">
-              <h2>Titulo</h2>
-              <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="45%" alt="">
-            </a> <hr/>
-            <h5> Plataforma:</h5> <p>{% lorem 2 b random %}</p>
-            <a href="https://www.youtube.com">
-              <p>YouTube</p>
-            </a>
-            <p>
-              Descipcion breve del video de youtube
-            </p>
           </div>
-        </div>
-
-        <div>
-          <div>
-            <h1>Curso Recomendado</h1>
-          </div>  <!--Autocrea-->
-          <div class = "card-buscados">
+          <!--Autocrea-->
+          {% for curso in cursos %}
+          <div class="card-buscados">
             <a href="#">
-              <h2>Titulo</h2>
-              <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="45%" alt="">
-            </a> <hr/>
-            <h5> Plataforma:</h5> <p>{% lorem 2 b random %}</p>
-            <a href="https://www.youtube.com">
-              <p>YouTube</p>
+              <h2>{{curso.titulo}}</h2> <!--titulo-->
+              <img
+                src="{{curso.imagen.url}}" 
+                width="45%"
+                alt=""
+              /> <!--Imagen del curso-->
             </a>
-            <p>
-              Descipcion breve del video de youtube
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <h1>Cursos de ESCOM</h1>
-          </div>  <!--Autocrea-->
-          <div class = "card-buscados">
-            <a href="#">
-              <h2>Titulo</h2>
-              <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="45%" alt="">
-            </a> <hr/>
-            <h5> Plataforma:</h5> <p>{% lorem 2 b random %}</p>
-            <a href="https://www.youtube.com">
-              <p>YouTube</p>
+            <p>{{curso.description}}</p> <!--Descripcion del curso-->
+            <hr />
+            <h5>Plataforma:</h5>
+            <a href="{{curso.enlace}}"> <!--Link del curso-->
+              <p>{{curso.nombrePlataforma}}</p> <!--Plataforma del curso-->
             </a>
-            <p>
-              Descipcion breve del video de youtube
-            </p>
+                       
+            <p>{{curso.description_vid}}</p> <!--Descripcion del video del curso-->
           </div>
+          {% endfor %} {% comment %} fin autocrea {% endcomment %}
         </div>
-      </div> <!--End conteiner1-->
+      </div>
+      <!--End conteiner1-->
 
       <div class="container2">
-        <h1 style="font-size: 2em;">Tambien podria interesarte</h1>
+        <h1 style="font-size: 2em">Tambien podria interesarte</h1>
+        {% comment %} aqui comienza el right side bar {% endcomment %}
         <div class="card-sidebar">
           <a href="#">
             <div class="">
               <h2>Tasa interna de rendimiento TIR</h2>
             </div>
             <div class="">
-              <img src="{% static 'cursos/img/youtube_logo.png' %}" width="100%" alt="" href="https://www.youtube.com/watch?v=SyWRHmzKNZ0&ab_channel=T%C3%BA%2CyoyelTE">
-              <br/>
-              <hr/>
-              <p>Tasa interna de rendimiento, TIR, Tasa interna de retorno, qué significa la TIR, cómo se calcula la TIR por el método ensayo y error</p>
+              <img
+                src="{% static 'cursos/img/youtube_logo.png' %}"
+                width="100%"
+                alt=""
+                href="https://www.youtube.com/watch?v=SyWRHmzKNZ0&ab_channel=T%C3%BA%2CyoyelTE"
+              />
+              <br />
+              <hr />
+              <p>
+                Tasa interna de rendimiento, TIR, Tasa interna de retorno, qué
+                significa la TIR, cómo se calcula la TIR por el método ensayo y
+                error
+              </p>
             </div>
           </a>
         </div>
-        <div class="card-sidebar">
-          <a href="#">
-
-            <div class="">
-              <h2>Valor del dinero en el tiempo</h2>
-            </div>
-            <div class="">
-              <img src="{% static 'cursos/img/youtube_logo.png' %}" width="100%" alt="" href="https://www.youtube.com/watch?v=Fb7y389mlRY&ab_channel=T%C3%BA%2CyoyelTE">
-              <br/>
-              <hr/>
-              <p> Valor del dinero en el tiempo, valor presente, valor futuro</p>
-            </div>
-          </a>
-        </div>
-        
-        
-        
-      </div> <!--End conteiner2-->
+      </div>
+      <!--End conteiner2-->
     </section>
     <!--Fin de los cursos-->
 
@@ -154,5 +139,5 @@
       </p>
       <p>&copy; C-Finder 2022</p>
     </div>
-</body>
+  </body>
 </html>
