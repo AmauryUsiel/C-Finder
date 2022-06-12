@@ -39,7 +39,6 @@ a:active {
     line-height: 1.4;
     display: flex;
     flex-direction: row;
-    padding: 85px;
 }
 
 .container1 {
@@ -105,13 +104,28 @@ h1 {
 color1 {
     color: #341d0d;
     /* color2 { */
-    color: #624c20;
+    color: #624c2072;
     /* color3 { */
     color: #60a5e1;
     /* color4 { */
     color: #cbdeed;
     /*color5 {*/
     color: #f8efed;
+    /* .color1 { */
+    color: #420f00;
+    /* } */
+    /* .color2 { */
+    color: #5b4a00;
+    /* } */
+    /* .color3 { */
+    color: #3486ff;
+    /* } */
+    /* .color4 { */
+    color: #e0beff;
+    /* } */
+    /* .color5 { */
+    color: #ffffff;
+    /* } */
 }
 
 .navbar {

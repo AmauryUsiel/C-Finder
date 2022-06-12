@@ -1,36 +1,6 @@
-<html lang="es">
-  <head> 
+{% extends "cursos/base.html" %} {% load static %} {%block content %}
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>C-Finder</title> 
-  </head>
-
-  <body>  
-    <!--Inicio de la Nav Bar-->
-
-    <nav class="">  
-        <a href="#">
-          <img src="../../static/cfinderv2_v2.png" width="100vh" alt="" />
-        </a> 
-        <a class="" href="" style="color: black" 
-          <img src="../../static/logpng.png" width="30" alt="" />
-          Usuario
-        </a> 
-      <div class=""> 
-        <form action="" class="" style="width: 100">  
-            <input
-              type=""
-              type="search"
-              placeholder="Ingresa la busqueda" 
-            <button class="" type="submit"> 
-              Buscar🔎
-            </button> 
-        </form>
-      </div>
-    </nav>
-    <!--Fin de la -->
+    <!--Fin de la nav-->
     <section>
       <div class=""><!--class..."container"-->
         <div class=""><!--class..."row align-items-center"-->
@@ -136,33 +106,4 @@
       </div>
     </section> 
 
-    <!-- Footer -->
-    <footer> 
-      <p>
-        <a href="#">
-          <span>
-            <i></i>
-            <i></i>
-          </span>
-        </a>
-        <a href="#">
-          <span>
-            <i> </i>
-            <i> </i>
-          </span>
-        </a>
-        <a href="#">
-          <span>
-            <i></i>
-            <i></i>
-          </span>
-        </a>
-      </p>
-      <p>
-        <a href="#">Política de privacidad</a> · <a href="#">Aviso legal</a> ·
-        <a href="#">Cookies</a>
-      </p>
-      <p>&copy; C-Finder 2022</p> 
-    </footer> 
-</body>
-</html>
+    {% endblock %}
