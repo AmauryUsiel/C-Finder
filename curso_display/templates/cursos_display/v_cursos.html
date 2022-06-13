@@ -8,25 +8,25 @@ padding: 85px;">
         <h1>Cursos Buscados</h1>
       </div>
       <!--Autocrea-->
-      {% for curso in cursos %}
+      {% for key, value in infoVid.items %}
       <div class="card-buscados">
-        <a href="#">
-          <h2>{{curso.titulo}}</h2>
+        <a href="{{value.url}}">
+          <h2>{{value.titulo}}</h2>
           <!--titulo-->
-          <img src="{{curso.imagen.url}}" width="45%" alt="" />
+          <img src="{{value.thumbnail}}" width="45%" alt="" />
           <!--Imagen del curso-->
         </a>
-        <p>{{curso.description}}</p>
+        <p></p>
         <!--Descripcion del curso-->
         <hr />
         <h5>Plataforma:</h5>
-        <a href="{{curso.enlace}}">
+        <a href="{{value.url}}">
           <!--Link del curso-->
-          <p>{{curso.nombrePlataforma}}</p>
+          <p>YouTube</p>
           <!--Plataforma del curso-->
         </a>
-
-        <p>{{curso.description_vid}}</p>
+        <h5>Descripcion:</h5>
+        <p>{{value.descripcion}}</p>
         <!--Descripcion del video del curso-->
       </div>
       {% endfor %} {% comment %} fin autocrea {% endcomment %}
