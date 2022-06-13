@@ -22,8 +22,9 @@ def get_video_info(query, limit=10):
 # Create your views here.
 
 def cursos(request):
+    busqueda = request.GET.get("buscar")
     #cursos = Curso.objects.all()
-    resultados = get_video_info("curso online de basketball")
+    resultados = get_video_info(busqueda)
     dicgen = {}
     
     for i in range(10):
