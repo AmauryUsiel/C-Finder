@@ -2,26 +2,26 @@
 
     <!--Fin de la nav-->
     <section>
-      <div class=""><!--class..."container"-->
-        <div class=""><!--class..."row align-items-center"-->
+      <div class="container"><!--class..."container"-->
+        <div class="row align-items-center"><!--class..."row align-items-center"-->
           <!--Vista Previa-->
-          <div class=""><!--class..."col align-items-center"-->
+          <div class="col align-items-center"><!--class..."col align-items-center"-->
             <!--Titulo-->
-            <h3 class="">Vista previa</h3><!--class..."fw-bold text-center py-4"-->
+            <h3 class="fw-bold text-center py-4">Vista previa</h3><!--class..."fw-bold text-center py-4"-->
 
             <!--Vista-->
-            <div class=""><!--class..."card"-->
-              <h5 class="">Titulo</h5><!--class..."card-header"-->
-              <div class=""><!--class..."card-body"-->
-                <h5 class="">Tema</h5><!--class..."card-title"-->
-                <p class="">En este curso podremos apreciar...</p><!--class..."card-text"-->
-                <img src="../../static/login_botrep.jpg" width="500" alt="" />
+            <div class="card"><!--class..."card"-->
+              <h5 class="card-header">Titulo</h5><!--class..."card-header"-->
+              <div class="card-body"><!--class..."card-body"-->
+                <h5 class="card-title">Tema</h5><!--class..."card-title"-->
+                <p class="card-text">En este curso podremos apreciar...</p><!--class..."card-text"-->
+                <img src="{% static 'cursos/img/login_botrep.jpg' %}" width="500" alt="" />
               </div>
             </div>
 
-            <div class=""><!--class..."mb-4 text-start"-->
-              <label for="videocomp" class=""
-                >Sube la imagen de previsualizacion de tu video</label><!--class..."form-label fw-bold"-->
+            <div class="mb-4 text-start"><!--class..."mb-4 text-start"-->
+              <label for="videocomp" class="form-label fw-bold">
+                Sube la imagen de previsualizacion de tu video</label><!--class..."form-label fw-bold"-->
               <input
                 class="form-control"
                 type="file"
@@ -32,20 +32,17 @@
           </div>
 
           <!--Formulario-->
-          <div class=""><!--class..."col"-->
-            <div class=""><!--class..."text-end"-->
-              <img src="../../static/logpng.png" width="40" height="40" alt="" />
-              <label for="" class="">Usuario</label><!--class..."fw-bold"-->
-              <img src="../../static/cfinderv2_v2.png" width="120" alt="" />
-
-              <h2 class="">Subida de Cursos</h2><!--class..."fw-bold text-center py-4"-->
+          <div class="col"><!--class..."col"-->
+            <div class="text-end"><!--class..."text-end"-->
+              
+              <h2 class="fw-bold text-center py-4">Subida de Cursos</h2><!--class..."fw-bold text-center py-4"-->
 
               <form action="#">
                 <!--Informacion General-->
 
                 <!--Titulo-->
-                <div class=""><!--class..."md-4 text-start"-->
-                  <label for="vidname" class=""><!--class..."form-label fw-bold"-->
+                <div class="md-4 text-start"><!--class..."md-4 text-start"-->
+                  <label for="vidname" class="form-label fw-bold"><!--class..."form-label fw-bold"-->
                     Titulo del Video
                   </label>
                   <input
@@ -57,8 +54,8 @@
                 </div>
 
                 <!--Temas-->
-                <div class=""><!--class..."md-4 text-start"-->
-                  <label for="vidtem" class=""><!--class..."form-label fw-bold"-->
+                <div class="md-4 text-start"><!--class..."md-4 text-start"-->
+                  <label for="vidtem" class="form-label fw-bold"><!--class..."form-label fw-bold"-->
                     Temas del video
                   </label>
                   <input
@@ -70,8 +67,8 @@
                 </div>
 
                 <!--Descipcion-->
-                <div class=""><!--class..."md-4 text-start"-->
-                  <label for="viddesc" class=""
+                <div class="md-4 text-start"><!--class..."md-4 text-start"-->
+                  <label for="viddesc" class="form-label fw-bold"
                     >Descripcion del video</label><!--class..."form-label fw-bold"-->
                   <textarea
                     class="form-control"
@@ -82,8 +79,8 @@
                 </div>
 
                 <!--Seleccionar archivo-->
-                <div class=""><!--class..."mb-4 text-start"-->
-                  <label for="videocomp" class=""
+                <div class="mb-4 text-start"><!--class..."mb-4 text-start"-->
+                  <label for="videocomp" class="form-label fw-bold"
                     >Sube tu archivo</label><!--class..."form-label fw-bold"-->
                   <input
                     class="form-control"
@@ -94,8 +91,8 @@
                 </div>
 
                 <!--Boton de subida-->
-                <div class=""><!--class..."d-grid"-->
-                  <button type="submit" class=""><!--class..."btn btn-primary text-center"-->
+                <div class="d-grid"><!--class..."d-grid"-->
+                  <button type="submit" class="btn btn-primary text-center"><!--class..."btn btn-primary text-center"-->
                     Publicar
                   </button>
                 </div>
